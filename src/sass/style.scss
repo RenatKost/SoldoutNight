@@ -1,0 +1,123 @@
+body {
+  display: flex;
+  justify-content: center;
+  background-color: #8a8484;
+}
+.wraper {
+  display: flex;
+  justify-content: center;
+  margin: 30px;
+  width: 1200px;
+  height: 1319px;
+}
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 30px;
+}
+.main-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.sidebar-booking-details {
+  padding: 30px;
+  width: 420px;
+  height: 317px;
+  margin-bottom: 30px;
+  background-color: white;
+  display: block;
+}
+.sidebar-luggage {
+  display: block;
+  padding: 30px;
+  width: 420px;
+  height: 427px;
+  margin-bottom: 30px;
+  background-color: white;
+}
+.sidebar-price-details {
+  display: block;
+  width: 420px;
+  height: 381px;
+
+  background-color: white;
+}
+.booking-details {
+  width: 710px;
+  height: 727px;
+  margin-bottom: 30px;
+  background-color: white;
+}
+.guest-info {
+  width: 710px;
+  height: 750px;
+  margin-bottom: 30px;
+  background-color: white;
+}
+.loyalty-program {
+  width: 710px;
+  height: 202px;
+  background-color: white;
+}
+//------------------------- .sidebar-booking-details-----------------------------------------------//
+
+.sidebar-booking-details h2 {
+  display: inline-block;
+  font-family: Circular Std;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  margin: 0;
+  color: #292949;
+}
+hr {
+  margin: 30px 0 30px 0;
+}
+.booking-details-id {
+  width: 131px;
+  height: 24px;
+  float: right;
+  text-align: center;
+  background: #61dbb4;
+  border-radius: 5px;
+}
+.booking-details-id span {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+.sidebar-booking-details p {
+  display: flex;
+  justify-content: space-between;
+  font-family: Circular Std;
+  font-style: normal;
+  font-weight: 450;
+  font-size: 12px;
+  margin-bottom: 35px;
+  color: #7b819a;
+}
+.booking-details-confirm {
+  width: 93px;
+  height: 22px;
+  padding-top: 4px;
+  background: #d7f5eb;
+  border-radius: 20px;
+  text-align: center;
+  font-family: Circular Std;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  color: #6dc4a8;
+}
+
+//-------------------------------.sidebar-luggage---------------------------------------------------//
+
+.sidebar-luggage p {
+  text-align: justify;
+}

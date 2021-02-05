@@ -5,13 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Placeholder title</title>
+    <link rel="stylesheet" href="sass/style.scss" />
     <!-- Сюда будет всталена ссылка на файл стилей -->
     <!-- inject:css -->
     <!-- endinject -->
   </head>
 
   <body>
-  
+    <div class="wraper">
+      <aside class="sidebar">
+        <div class="sidebar-booking-details">
+          <h2>Booking details</h2>
+          <div class="booking-details-id">
+            <span>Booking ID: 239503</span>
+          </div>
+          <hr />
+          <p>Booked by: <span>Kirill Buriak</span></p>
+          <p>Member <span>kathrynpena@ibm.com</span></p>
+          <p>Booking date:<span>May 1, 2020</span></p>
+          <p>Status:<span class="booking-details-confirm">Confirmed</span></p>
+        </div>
+        <div class="sidebar-luggage">
+          <h2>Luggage</h2>
+          <hr />
+          <p><span></span>Kathryn Pena</p>
+          <p>JFK - FRA 1 x 15kg checked bag $14</p>
+          <p></p>
+          <p><span></span></p>
+          <p></p>
+          <p></p>
+        </div>
+        <div class="sidebar-price-details"></div>
+      </aside>
+      <div class="main-info">
+        <div class="booking-details"></div>
+        <div class="guest-info"></div>
+        <div class="loyalty-program"></div>
+      </div>
+    </div>
+
     <!-- Сюда будет всталена ссылка на файл скриптов -->
     <!-- inject:js -->
     <!-- endinject -->
