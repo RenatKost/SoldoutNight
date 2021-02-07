@@ -1,14 +1,36 @@
+//---8-91------------wraper and main///
+//---91-149----------.sidebar-booking-details//
+//---150-179---------.sidebar-luggage//
+//---180-213---------.sidebar-price-details//
+//---213-431---------booking-details---здесь я начал инлайн блоками играть)//
+//---431-475----------.guest-info----//
+
+@font-face {
+  font-family: 'CircularStd';
+  src: url('/fonts/CircularStd/CircularStd-Medium.woff2') format('woff2'),
+    url('/fonts/CircularStd/CircularStd-Medium.woff') format('woff');
+}
+//@font-face {
+//font-family: 'Roboto';
+//src: url('/fonts/Roboto.woff') format('woff');
+//}
 body {
   display: flex;
   justify-content: center;
-  background-color: #8a8484;
+  background-color: #f5f8fe;
 }
 .wraper {
   display: flex;
   justify-content: center;
   margin: 30px;
-  width: 1200px;
-  height: 1319px;
+  max-width: 1200px;
+  height: 100%;
+}
+svg {
+  margin-right: 10px;
+}
+sup {
+  color: #7b819a;
 }
 .sidebar {
   display: flex;
@@ -24,8 +46,8 @@ body {
 }
 .sidebar-booking-details {
   padding: 30px;
-  width: 420px;
-  height: 317px;
+  width: 100%;
+  max-height: 317px;
   margin-bottom: 30px;
   background-color: white;
   display: block;
@@ -33,48 +55,56 @@ body {
 .sidebar-luggage {
   display: block;
   padding: 30px;
-  width: 420px;
-  height: 427px;
+  width: 100%;
+  max-height: 427px;
   margin-bottom: 30px;
   background-color: white;
 }
 .sidebar-price-details {
   display: block;
-  width: 420px;
-  height: 381px;
-
+  width: 100%;
+  max-height: 381px;
+  padding: 30px;
   background-color: white;
 }
 .booking-details {
-  width: 710px;
-  height: 727px;
+  display: block;
+  width: 100%;
+  max-height: 728px;
+  padding: 30px;
   margin-bottom: 30px;
   background-color: white;
 }
 .guest-info {
-  width: 710px;
-  height: 750px;
+  width: 100%;
+  max-height: 750px;
   margin-bottom: 30px;
+  padding: 30px;
   background-color: white;
 }
 .loyalty-program {
-  width: 710px;
-  height: 202px;
+  width: 100%;
+  max-height: 200px;
   background-color: white;
+  margin-bottom: 30px;
+  padding: 30px;
 }
 //------------------------- .sidebar-booking-details-----------------------------------------------//
 
 .sidebar-booking-details h2 {
   display: inline-block;
-  font-family: Circular Std;
+  font-family: CircularStd;
   font-style: normal;
-  font-weight: bold;
-  font-size: 24px;
+  font-weight: 500;
+  font-size: 18px;
   margin: 0;
   color: #292949;
 }
 hr {
-  margin: 30px 0 30px 0;
+  border: 1px solid #e9edf3;
+  box-sizing: border-box;
+
+  margin: 30px -30px 30px -30px;
 }
 .booking-details-id {
   width: 131px;
@@ -85,7 +115,7 @@ hr {
   border-radius: 5px;
 }
 .booking-details-id span {
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
@@ -95,7 +125,7 @@ hr {
 .sidebar-booking-details p {
   display: flex;
   justify-content: space-between;
-  font-family: Circular Std;
+  font-family: CircularStd;
   font-style: normal;
   font-weight: 450;
   font-size: 12px;
@@ -109,7 +139,7 @@ hr {
   background: #d7f5eb;
   border-radius: 20px;
   text-align: center;
-  font-family: Circular Std;
+  font-family: CircularStd;
   font-style: normal;
   font-weight: 700;
   font-size: 12px;
@@ -117,7 +147,372 @@ hr {
 }
 
 //-------------------------------.sidebar-luggage---------------------------------------------------//
+.sidebar-luggage h2 {
+  font-family: CircularStd;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  margin: 0;
+  color: #292949;
+}
+.sidebar-luggage tr {
+  display: flex;
 
-.sidebar-luggage p {
-  text-align: justify;
+  background: #f5f8fe;
+  border-radius: 4%;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  color: #7b819a;
+}
+.sidebar-luggage th {
+  font-family: CircularStd;
+  font-style: normal;
+  font-weight: 450;
+  font-size: 14px;
+  line-height: 163.6%;
+  color: #7b819a;
+  display: flex;
+  background: #ffffff;
+  width: 100%;
+}
+.sidebar-luggage td {
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 14px;
+}
+//---------------------------------.sidebar-price-details----------------------------------------//
+.sidebar-price-details h2 {
+  font-family: CircularStd;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  margin: 0;
+  color: #292949;
+}
+.sidebar-price-details p {
+  display: flex;
+  justify-content: space-between;
+  font-family: CircularStd;
+  font-style: normal;
+  font-weight: 450;
+  font-size: 12px;
+  margin-bottom: 35px;
+  color: #7b819a;
+}
+.splash {
+  margin: 15px;
+}
+.sidebar-price-details .p-total {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  margin: 0;
+  color: #292949;
+}
+.sidebar-price-details .free {
+  font-weight: bold;
+  font-size: 14px;
+  color: #57d1aa;
+}
+//------------------------------------booking-details----------------------------------------------//
+.booking-details h2 {
+  display: inline-block;
+  font-family: CircularStd;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  margin: 0;
+  color: #292949;
+}
+.booking-details hr {
+  border: 1px solid #e9edf3;
+  box-sizing: border-box;
+
+  margin: 30px -30px 20px -30px;
+}
+.booking-details .hr {
+  border: none;
+  border-top: 1px dashed #c6cad9;
+}
+.booking-details .airlines {
+  display: inline-block;
+  margin: 40px 190px 5px 110px;
+  font-family: CircularStd;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  color: #292949;
+}
+.booking-details .airlines-2 {
+  margin: 30px 0px 5px 65px;
+  font-family: CircularStd;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  color: #292949;
+}
+.booking-details .airlines-2 .person-2 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  color: #7b819a;
+  margin-left: 10px;
+}
+.booking-details .airlines .person {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  color: #7b819a;
+  margin-left: 10px;
+}
+.booking-details .p-refund {
+  display: inline-block;
+  margin: 0 0 0 0;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  text-decoration-line: underline;
+  color: #7b819a;
+}
+.newyork {
+  display: inline-block;
+  margin: 0 350px 0 65px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  color: #292949;
+}
+.frankfurt {
+  display: inline-block;
+  margin: 25px 0px 0px 113px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  color: #292949;
+}
+.fare {
+  display: inline-block;
+  margin: 0;
+  padding-left: 5px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  text-decoration-line: underline;
+  color: #7b819a;
+}
+.duration {
+  margin-top: 25px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  color: #7b819a;
+}
+.booking-details .delta {
+  padding-left: 50px;
+}
+.booking-details .p-delta {
+  display: flex;
+  justify-content: space-between;
+  font-family: CircularStd;
+  font-style: normal;
+  font-weight: 450;
+  font-size: 12px;
+  margin: 0;
+  padding-top: 5px;
+  color: #7b819a;
+}
+.booking-details .p-delta span {
+  width: 125px;
+  height: 20px;
+  text-align: center;
+  padding: 3px;
+  background: #f5f8fe;
+  border-radius: 5px;
+}
+.booking-details svg {
+  float: left;
+}
+.delta-airbus {
+  margin-right: 10px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  color: #7b819a;
+}
+.delta-airbus:not(:last-child)::after {
+  content: '';
+  display: inline-block;
+  width: 3px;
+  height: 3px;
+  margin-left: 5px;
+  margin-bottom: 3px;
+  align-content: center;
+  border-radius: 50%;
+  background-color: #7b819a;
+}
+.delta-timeline {
+  position: relative;
+  height: 15%;
+  border-left: 1px solid #c6cad9;
+  padding-left: 35px;
+  margin-left: 11px;
+}
+.time-1::before {
+  content: '';
+  display: block;
+  width: 10px;
+  height: 10px;
+  margin-bottom: 3px;
+  border-radius: 50%;
+  background-color: white;
+  border: 1px solid #c6cad9;
+  position: absolute;
+  left: -118%;
+}
+.time-2::before {
+  content: '';
+  display: block;
+  width: 10px;
+  height: 10px;
+  margin-bottom: 3px;
+  border-radius: 50%;
+  background-color: white;
+  border: 1px solid #c6cad9;
+  position: absolute;
+  left: -85%;
+}
+
+.time-1 {
+  display: block;
+  position: absolute;
+  top: -20%;
+  font-family: CircularStd;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  color: #292949;
+}
+.time-2 {
+  position: absolute;
+  top: 110%;
+  font-family: CircularStd;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  color: #292949;
+}
+
+.booking-details .klm {
+  padding-left: 50px;
+}
+.booking-details .p-klm {
+  display: flex;
+  justify-content: space-between;
+  font-family: CircularStd;
+  font-style: normal;
+  font-weight: 450;
+  font-size: 12px;
+  margin: 0;
+  padding-top: 5px;
+  color: #7b819a;
+}
+.booking-details .p-klm span {
+  width: 125px;
+  height: 20px;
+  text-align: center;
+  padding: 3px;
+  background: #f5f8fe;
+  border-radius: 5px;
+}
+
+//--------------------------------.guest-info----------------------------------------////////////
+.guest-info h2 {
+  display: inline-block;
+  font-family: CircularStd;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  margin: 0;
+  color: #292949;
+}
+.guest-info td {
+  font-family: CircularStd;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  color: #7b819a;
+}
+.text-color {
+  //
+  font-family: CircularStd;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  color: #292949;
+}
+.guest-info .table {
+  width: 94%;
+  /* float: right; */
+  margin-top: -30px;
+  margin-left: 40px;
+}
+.guest-info .table tr {
+  display: flex;
+  margin-bottom: 10px;
+  justify-content: space-between;
+  align-content: space-around;
+}
+.guest-info .table td {
+  width: 100%;
+}
+.guest-info svg {
+  margin-left: 5px;
+}
+//------------------------------------loyalty-program------------------------------------//
+.loyalty-program h2 {
+  display: inline-block;
+  font-family: CircularStd;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  margin: 0;
+  color: #292949;
+}
+
+.loyalty-program p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  color: #7b819a;
+}
+
+.loyalty-program p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  color: #7b819a;
+}
+.price-hr {
+  margin: 0 0 30px 0;
+}
+.loyalty-hr {
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .wraper {
+    display: flex;
+    justify-content: space-between;
+  }
 }
